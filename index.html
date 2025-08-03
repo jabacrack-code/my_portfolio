@@ -3,59 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wang'ondu Maina</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Kelvin Maina - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <h2>Wang'ondu Maina</h2>
+          <h2>Kelvin Maina</h2>
         </div>
         <ul class="nav-menu">
           <li><a href="#home" class="nav-link">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-container">
-        <div class="floating-shapes">
-          <div class="shape shape-1"></div>
-          <div class="shape shape-2"></div>
-          <div class="shape shape-3"></div>
-          <div class="shape shape-4"></div>
-        </div>
-        <div class="hero-content">
-          <h1 class="hero-title">
-            <span class="title-line">Creative</span>
-            <span class="title-line">Frontend</span>
-            <span class="title-line highlight">Developer</span>
-          </h1>
-          <p class="hero-subtitle">
-            Crafting exceptional digital experiences with modern web
-            technologies
-          </p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+      <div class="home-container">
+        <div class="profile-card">
+          <div class="profile-image-container">
+            <img
+              src="/public/my photo.jpeg"
+              alt="Kelvin Maina"
+              class="profile-image"
+            />
           </div>
-        </div>
-        <div class="hero-visual">
-          <div class="cube-container">
-            <div class="cube">
-              <div class="face front">HTML</div>
-              <div class="face back">CSS</div>
-              <div class="face right">JS</div>
-              <div class="face left">React</div>
-              <div class="face top">Figma</div>
-              <div class="face bottom">Django</div>
+          <div class="profile-content">
+            <h1 class="profile-name">Kelvin Maina</h1>
+            <p class="profile-title">Full Stack Developer</p>
+            <p class="profile-description">
+              Passionate developer creating innovative web solutions with modern
+              technologies
+            </p>
+            <div class="profile-actions">
+              <a href="/public/Kelvin_Maina.docx" download class="cv-button">
+                <span>Download CV</span>
+                <div class="button-3d"></div>
+              </a>
             </div>
           </div>
         </div>
@@ -63,156 +53,39 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="section about-section">
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
           <div class="about-card">
             <div class="card-inner">
               <div class="card-front">
+                <h3>What I Do</h3>
+                <div class="icon">💻</div>
+              </div>
+              <div class="card-back">
+                <p>
+                  I'm a passionate full-stack developer specializing in creating
+                  dynamic web applications. I work with modern frameworks like
+                  React, Laravel, and vanilla JavaScript to build scalable
+                  solutions that solve real-world problems.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-card">
+            <div class="card-inner">
+              <div class="card-front">
                 <h3>Education</h3>
-                <p>
-                  Bachelors in Mathematics and Computer Science. <br />
-                  Jomo Kenyatta University of Agriculture and Technology. <br />
-                  2018 - 2022.
-                </p>
+                <div class="icon">🎓</div>
               </div>
               <div class="card-back">
                 <p>
-                  Passionate about modern web technologies including React,
-                  Vue.js, and CSS frameworks. I love turning complex problems
-                  into simple, beautiful designs.
+                  Bachelor's Degree in Computer Science with a focus on software
+                  engineering and web development. Continuously learning new
+                  technologies and staying updated with industry trends through
+                  online courses and certifications.
                 </p>
-              </div>
-            </div>
-          </div>
-          <div class="about-card">
-            <div class="card-inner">
-              <div class="card-front">
-                <h3>UI/UX Enthusiast</h3>
-                <p>Designing intuitive and engaging user experiences</p>
-              </div>
-              <div class="card-back">
-                <p>
-                  I believe great design is invisible. My focus is on creating
-                  seamless interactions that feel natural and delightful to
-                  users.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="about-card">
-            <div class="card-inner">
-              <div class="card-front">
-                <h3>Innovation Focused</h3>
-                <p>Always exploring cutting-edge technologies and trends</p>
-              </div>
-              <div class="card-back">
-                <p>
-                  From 3D CSS transforms to WebGL, I'm constantly pushing the
-                  boundaries of what's possible in web development.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="https://images.pexels.com/photos/3861943/pexels-photo-3861943.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="E-Commerce Platform"
-              />
-            </div>
-            <div class="project-content">
-              <h3>E-Commerce Platform</h3>
-              <p>Modern shopping experience with React and Node.js</p>
-              <div class="project-tags">
-                <span class="tag">React</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">MongoDB</span>
-              </div>
-            </div>
-            <div class="project-overlay">
-              <div class="overlay-content">
-                <h4>E-Commerce Platform</h4>
-                <p>
-                  A full-stack e-commerce solution with advanced filtering,
-                  payment integration, and admin dashboard.
-                </p>
-                <div class="overlay-buttons">
-                  <a href="#" class="btn btn-small">Live Demo</a>
-                  <a href="#" class="btn btn-small btn-outline">Source Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Task Management App"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Task Management App</h3>
-              <p>Collaborative productivity tool with real-time updates</p>
-              <div class="project-tags">
-                <span class="tag">Vue.js</span>
-                <span class="tag">Firebase</span>
-                <span class="tag">PWA</span>
-              </div>
-            </div>
-            <div class="project-overlay">
-              <div class="overlay-content">
-                <h4>Task Management App</h4>
-                <p>
-                  A collaborative task management application with real-time
-                  synchronization and offline capabilities.
-                </p>
-                <div class="overlay-buttons">
-                  <a href="#" class="btn btn-small">Live Demo</a>
-                  <a href="#" class="btn btn-small btn-outline">Source Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <img
-                src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Data Visualization Dashboard"
-              />
-            </div>
-            <div class="project-content">
-              <h3>Data Visualization Dashboard</h3>
-              <p>Interactive charts and analytics platform</p>
-              <div class="project-tags">
-                <span class="tag">D3.js</span>
-                <span class="tag">React</span>
-                <span class="tag">Python</span>
-              </div>
-            </div>
-            <div class="project-overlay">
-              <div class="overlay-content">
-                <h4>Data Visualization Dashboard</h4>
-                <p>
-                  Interactive dashboard for complex data visualization with
-                  customizable charts and real-time updates.
-                </p>
-                <div class="overlay-buttons">
-                  <a href="#" class="btn btn-small">Live Demo</a>
-                  <a href="#" class="btn btn-small btn-outline">Source Code</a>
-                </div>
               </div>
             </div>
           </div>
@@ -221,90 +94,240 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="section skills-section">
       <div class="container">
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-container">
-          <div class="skill-category">
-            <h3>Frontend</h3>
+          <div class="skill-cube">
+            <div class="cube">
+              <div class="face front">HTML5</div>
+              <div class="face back">CSS3</div>
+              <div class="face right">JavaScript</div>
+              <div class="face left">React</div>
+              <div class="face top">PHP</div>
+              <div class="face bottom">Laravel</div>
+            </div>
+          </div>
+          <div class="skills-list">
             <div class="skill-item">
-              <span class="skill-name">HTML/CSS</span>
+              <span class="skill-name">Frontend Development</span>
               <div class="skill-bar">
-                <div class="skill-progress" data-width="95"></div>
+                <div class="skill-progress" style="--progress: 90%"></div>
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name">JavaScript</span>
+              <span class="skill-name">Backend Development</span>
               <div class="skill-bar">
-                <div class="skill-progress" data-width="90"></div>
+                <div class="skill-progress" style="--progress: 85%"></div>
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name">React</span>
+              <span class="skill-name">Database Management</span>
               <div class="skill-bar">
-                <div class="skill-progress" data-width="85"></div>
+                <div class="skill-progress" style="--progress: 80%"></div>
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name">Tailwind CSS</span>
+              <span class="skill-name">Version Control</span>
               <div class="skill-bar">
-                <div class="skill-progress" data-width="80"></div>
+                <div class="skill-progress" style="--progress: 88%"></div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="skill-category">
-            <h3>Backend</h3>
-            <div class="skill-item">
-              <span class="skill-name">Django</span>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="85"></div>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-front">
+                <h3>E-commerce Website</h3>
+                <div class="project-icon">🛒</div>
               </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Python</span>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="75"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">MySQL</span>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="80"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">PostgreSQL</span>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="70"></div>
+              <div class="project-back">
+                <p>
+                  A full-featured e-commerce platform with user authentication,
+                  product catalog, shopping cart, and payment integration. Built
+                  with modern web technologies for optimal performance.
+                </p>
+                <div class="project-tech">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                </div>
+                <a
+                  href="https://github.com/kelvinmaina/ecommerce-website"
+                  target="_blank"
+                  class="github-link"
+                >
+                  <span>View on GitHub</span>
+                </a>
               </div>
             </div>
           </div>
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-front">
+                <h3>Ticket Management System</h3>
+                <div class="project-icon">🎫</div>
+              </div>
+              <div class="project-back">
+                <p>
+                  A comprehensive ticket management system for handling customer
+                  support requests with real-time updates, priority levels, and
+                  admin dashboard.
+                </p>
+                <div class="project-tech">
+                  <span>PHP Laravel</span>
+                  <span>JavaScript</span>
+                  <span>MySQL</span>
+                </div>
+                <a
+                  href="https://github.com/kelvinmaina/ticket-management"
+                  target="_blank"
+                  class="github-link"
+                >
+                  <span>View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-front">
+                <h3>Shopping Cart</h3>
+                <div class="project-icon">🛍️</div>
+              </div>
+              <div class="project-back">
+                <p>
+                  An interactive shopping cart application with dynamic product
+                  management, quantity updates, and seamless checkout
+                  experience.
+                </p>
+                <div class="project-tech">
+                  <span>React.js</span>
+                  <span>Redux</span>
+                  <span>CSS3</span>
+                </div>
+                <a
+                  href="https://github.com/kelvinmaina/shopping-cart"
+                  target="_blank"
+                  class="github-link"
+                >
+                  <span>View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="skill-category">
-            <h3>Tools & Others</h3>
-            <div class="skill-item">
-              <span class="skill-name">Git</span>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="90"></div>
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section hobbies-section">
+      <div class="container">
+        <h2 class="section-title">Hobbies</h2>
+        <div class="hobbies-container">
+          <div class="hobby-item">
+            <h3>Chess</h3>
+            <div class="chessboard">
+              <div class="chess-row">
+                <div class="chess-square light">♜</div>
+                <div class="chess-square dark">♞</div>
+                <div class="chess-square light">♝</div>
+                <div class="chess-square dark">♛</div>
+                <div class="chess-square light">♚</div>
+                <div class="chess-square dark">♝</div>
+                <div class="chess-square light">♞</div>
+                <div class="chess-square dark">♜</div>
+              </div>
+              <div class="chess-row">
+                <div class="chess-square dark">♟</div>
+                <div class="chess-square light">♟</div>
+                <div class="chess-square dark">♟</div>
+                <div class="chess-square light">♟</div>
+                <div class="chess-square dark">♟</div>
+                <div class="chess-square light">♟</div>
+                <div class="chess-square dark">♟</div>
+                <div class="chess-square light">♟</div>
+              </div>
+              <div class="chess-row">
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+              </div>
+              <div class="chess-row">
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+              </div>
+              <div class="chess-row">
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+              </div>
+              <div class="chess-row">
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+                <div class="chess-square dark"></div>
+                <div class="chess-square light"></div>
+              </div>
+              <div class="chess-row">
+                <div class="chess-square light">♙</div>
+                <div class="chess-square dark">♙</div>
+                <div class="chess-square light">♙</div>
+                <div class="chess-square dark">♙</div>
+                <div class="chess-square light">♙</div>
+                <div class="chess-square dark">♙</div>
+                <div class="chess-square light">♙</div>
+                <div class="chess-square dark">♙</div>
+              </div>
+              <div class="chess-row">
+                <div class="chess-square dark">♖</div>
+                <div class="chess-square light">♘</div>
+                <div class="chess-square dark">♗</div>
+                <div class="chess-square light">♕</div>
+                <div class="chess-square dark">♔</div>
+                <div class="chess-square light">♗</div>
+                <div class="chess-square dark">♘</div>
+                <div class="chess-square light">♖</div>
               </div>
             </div>
-            <div class="skill-item">
-              <span class="skill-name">Agile Framework</span>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="75"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">AWS</span>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="70"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Figma</span>
-              <div class="skill-bar">
-                <div class="skill-progress" data-width="85"></div>
+          </div>
+          <div class="hobby-item">
+            <h3>Football</h3>
+            <div class="football-container">
+              <div class="football">
+                <div class="football-pattern">
+                  <div class="pentagon"></div>
+                  <div class="hexagon hex1"></div>
+                  <div class="hexagon hex2"></div>
+                  <div class="hexagon hex3"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -313,23 +336,23 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section contact-section">
       <div class="container">
         <h2 class="section-title">Contact Me</h2>
-        <div class="contact-content">
+        <div class="contact-container">
           <div class="contact-info">
             <div class="contact-item">
               <div class="contact-icon">📧</div>
               <div class="contact-details">
                 <h4>Email</h4>
-                <p>kelvinmainahh@gmail.com</p>
+                <p>kelvin.maina@email.com</p>
               </div>
             </div>
             <div class="contact-item">
               <div class="contact-icon">📱</div>
               <div class="contact-details">
                 <h4>Phone</h4>
-                <p>+254 758 297 857</p>
+                <p>+254 123 456 789</p>
               </div>
             </div>
             <div class="contact-item">
@@ -339,52 +362,36 @@
                 <p>Nairobi, Kenya</p>
               </div>
             </div>
-            <div class="social-links">
-              <a
-                href="https://www.linkedin.com/in/kelvin-maina-573787243/"
-                class="social-link"
-                >LinkedIn</a
-              >
-              <a href="https://github.com/jabacrack-code" class="social-link"
-                >GitHub</a
-              >
-              <a href="https://x.com/kelvinmainahh" class="social-link"
-                >Twitter</a
-              >
+            <div class="contact-item">
+              <div class="contact-icon">💼</div>
+              <div class="contact-details">
+                <h4>LinkedIn</h4>
+                <p>linkedin.com/in/kelvinmaina</p>
+              </div>
             </div>
           </div>
           <div class="contact-form">
-            <form>
+            <form class="form-3d">
               <div class="form-group">
-                <input type="text" placeholder="Your Name" required />
+                <input type="text" id="name" required />
+                <label for="name">Your Name</label>
               </div>
               <div class="form-group">
-                <input type="email" placeholder="Your Email" required />
+                <input type="email" id="email" required />
+                <label for="email">Your Email</label>
               </div>
               <div class="form-group">
-                <input type="text" placeholder="Subject" required />
+                <textarea id="message" required></textarea>
+                <label for="message">Your Message</label>
               </div>
-              <div class="form-group">
-                <textarea
-                  placeholder="Your Message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Send Message
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <div class="btn-3d"></div>
               </button>
             </form>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2025 Wang'ondu Maina. All rights reserved.</p>
-      </div>
-    </footer>
   </body>
 </html>
